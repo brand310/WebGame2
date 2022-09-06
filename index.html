@@ -7,17 +7,35 @@
     <title>BRANDON'S JUMPING GAME</title>
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
+    <input
+      class="jumpButton"
+      type="button"
+      onclick="document.getElementById('jumpSFX').play(); jump();"
+      value="JUMP!"
+    />
     <button class="resetgame" onclick="window.location.reload();">
       RESET GAME
     </button>
-    <input type="button" onclick="jump()" value="JUMP!" />
     <div id="game">
       <div id="character"></div>
       <div id="block"></div>
     </div>
-
+    <audio
+      id="gameBGM"
+      autoplay
+      src="assets/Jeremy Blake - Powerup! ♫ NO COPYRIGHT 8-bit Music.mp3"
+      type="audio/mp3"
+    ></audio>
+    <audio id="jumpSFX" src="assets/jumpingSFX.wav"></audio>
     <script src="script.js"></script>
   </body>
 </html>

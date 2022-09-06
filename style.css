@@ -3,8 +3,11 @@
     padding: 0;
     margin: 0;
 }
+body {
+    background: black;
+}
 button {
-    background-color: #4CAF50; 
+    background-color: #ff0000; 
     border: none;
     color: white;
     padding: 15px 32px;
@@ -12,10 +15,11 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin-left: 800px;
+    font-family: 'Press Start 2P', cursive;
+    margin-left: 300px;
 }
 
-input {
+.jumpButton {
 background-color: #4CAF50; 
   border: none;
   color: white;
@@ -23,16 +27,16 @@ background-color: #4CAF50;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Press Start 2P', cursive;
   font-size: 16px;
-
+  margin-left: 900px;
 }
-
 
 #game{
     width: 1980px;
     height: 800px;
     border: 1px solid black;
-    background-image: url('assets/giphy.gif');
+    background-image: url('assets/background.gif');
     background-repeat: no-repeat;
     background-size: 1920px 950px;
 }
@@ -70,7 +74,8 @@ background-color: #4CAF50;
 }
 
 @keyframes jump{
-    0%{top: 200px;}
-    50%{top: 200px;}
-    100%{top: 200px;} 
+    0%   {top: 450px;}
+    50%  {top: 200px;}
+    70% {top: 200px;}
+    100% {top: 300px;}
 }
