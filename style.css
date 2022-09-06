@@ -1,0 +1,76 @@
+*{
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 800px;
+}
+
+input {
+background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+
+#game{
+    width: 1980px;
+    height: 800px;
+    border: 1px solid black;
+    background-image: url('assets/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: 1920px 950px;
+}
+  
+#character{
+    width: 300px;
+    height: 300px;
+    background-image: url('assets/soldier.gif');
+    background-color: transparent;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    top:520px;
+    
+}
+.animate{
+    animation: jump 500ms infinite;
+}
+#block {
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    background-image: url('assets/alien.png');
+    background-size: 150px 150px ;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 350px;
+    left: 1550px;
+    animation: block 1s infinite linear ;
+}
+
+@keyframes block {
+    0%{left: 1500px;}
+    100%{left: -10px;}
+}
+
+@keyframes jump{
+    0%{top: 200px;}
+    50%{top: 200px;}
+    100%{top: 200px;} 
+}
