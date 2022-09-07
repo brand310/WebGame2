@@ -1,5 +1,4 @@
 *{
-    align-items: center;
     padding: 0;
     margin: 0;
 }
@@ -41,12 +40,12 @@ background-color: #4CAF50;
 }
 
 #game{
-    width: 1980px;
+    width: 1920px;
     height: 800px;
     border: 1px solid black;
     background-image: url('assets/background.gif');
     background-repeat: no-repeat;
-    background-size: 1920px 950px;
+    background-size: 1920px 800px;
 }
   
 #character{
@@ -57,7 +56,7 @@ background-color: #4CAF50;
     background-size: 300px;
     background-repeat: no-repeat;
     position: relative;
-    top: 450px;
+    top: 300px;
     
 }
 .animate{
@@ -71,7 +70,7 @@ background-color: #4CAF50;
     background-size: 150px 150px ;
     background-repeat: no-repeat;
     position: relative;
-    top: 300px;
+    top: 150px;
     left: 1550px;
     animation: block 1s infinite linear ;
 }
@@ -82,8 +81,8 @@ background-color: #4CAF50;
 }
 
 @keyframes jump{
-    0%   {top: 450px;}
-    50%  {top: 200px;}
-    70% {top: 200px;}
-    100% {top: 300px;}
+    0%   {top: 150px;}
+    50%  {top: 100px;}
+    70% {top: 100px;}
+    100% {top: 200px;}
 }
