@@ -14,5 +14,5 @@ Background Music: https://www.youtube.com/watch?v=l7SwiFWOQqM
 Jump SFX: https://freesound.org/people/jalastram/sounds/386645/
 
 Page to run the game from browser:
-https://freesound.org/people/jalastram/sounds/386645/
+https://brand310.github.io/WebGame2/
 
