@@ -1,7 +1,8 @@
+//character and block variables
 var character = document.getElementById("character");
 var block = document.getElementById("block")
 
-
+//jump function
 function jump() {
     if (character.classList != "animate") {
         character.classList.add("animate")
@@ -21,9 +22,28 @@ var check = setInterval(function(){
         alert("You Lose. Try Again! Press the reset game button.")
     }
 
-},10);
+});
 
-var audio = document.getElementById("gameBGM");
+
+
+
+// Audio 
+var audio = 
+
+document.getElementById("gameBGM");
 audio.volume = 0.1;
 
 
+
+
+var counts=setInterval(updated);
+		var upto=0;
+		function updated(){
+			var count= document.getElementById("counter");
+			count.innerHTML=++upto;
+			if(upto===1500)
+			{
+				clearInterval(counts);
+                alert("YOU WIN!")
+			}
+		}
